@@ -1,2 +1,2 @@
-vim.opt.colorcolumn = '79'
+vim.opt.colorcolumn = "80"
 

@@ -5,8 +5,17 @@ local plugins = {
       ensure_installed = {
         "rust-analyzer",
         "pyright",
+        "mypy",
+        "ruff",
       },
     },
+  },
+  {
+    "stevearc/conform.nvim",
+    event = "BufWritePre",
+    config = function ()
+      require "custom.configs.conform"
+    end,
   },
   {
     "neovim/nvim-lspconfig",
